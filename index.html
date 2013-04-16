@@ -33,63 +33,107 @@
       <section id="main_content" class="inner">
         <p>&lt;!DOCTYPE html&gt;
 
-    </p>
-        Pokémon Millennium Arena! Server Italiano Ufficiale!
-        &amp;lt;!--
-        var stile = &amp;quot;top=100, left=100, width=500, height=500, status=no, menubar=no, toolbar=no scrollbars=no&amp;quot;;
-        function Popup(apri) 
-        {
-          window.open(apri, &amp;quot;&amp;quot;, stile);
-        }
-        //--&amp;gt;
-        <div>
-        <div>
-        &lt;!--/* OpenX, Zone ID 68, 300x250 <em>/--&gt;
-        <a href="http://adv.progaming.it/www/delivery/ck.php?n=a8e9b5eb&amp;cb=32sddt16sd4g" target="_blank"><img src="http://adv.progaming.it/www/delivery/avw.php?zoneid=68&amp;cb=32sddt16sd4g&amp;n=a8e9b5eb" border="0" alt=""></a>
-        </em>
+</p>
+Showdown!&lt;!-- utilichart --&gt;
+
+var Config = {
+serverid: 'showdown',
+server: 'sim.smogon.com',
+serverport: 8000,
+serveraltport: 80,
+serverprotocol: 'ws',
+testclient: true
+};
+(function() {
+if (location.search !== '') {
+var m = /\?~~(([^:\/]*)(:[0-9]*)?)/.exec(location.search);
+if (m) {
+Config.serverid = m[1];
+Config.server = m[2];
+if (m[3]) {
+Config.serverport = m[3].substr(1);
+}
+} else {
+alert('Unrecognised query string syntax: ' + location.search);
+}
+}
+})();
+<p>
+</p>
+
+<p>&lt;!-- Chrome Frame --&gt;</p>
+
+
+
+<div>
+<h1><img src="pokemonshowdownbeta.png" alt="Pokemon Showdown! (beta)"></h1>
 </div>
-        <div>&lt;!--/ OpenX, Zone ID 67, 728x90 */--&gt;
-        <a href="http://adv.progaming.it/www/delivery/ck.php?n=a85159ad&amp;cb=65fd4hd4zhe6dfg4" target="_blank"><img src="http://adv.progaming.it/www/delivery/avw.php?zoneid=67&amp;cb=65fd4hd4zhe6dfg4&amp;n=a85159ad" border="0" alt=""></a>
+
+<div><div></div></div>
+
+<div>
+<div>
+<a href="#">Lobby</a>
 </div>
-<br><div>
-        <img src="pmlogo.png" alt="logo"><a>Registra il tuo nickname</a> <a href="http://pokemonmillennium.progaming.it/forum/topic/14368-faq-pokemon-millennium-arena/">Come iniziare</a> <a href="http://pokemonmillennium.progaming.it/forum/forum/51-spazio-logs/">Spazio Logs</a> <a href="http://pokemonmillennium.progaming.it/forum/forum/22-zona-battling/">Discutine con gli esperti</a>
-        </div>
-
-<pre><code>    &lt;div id="wrapper"&gt;
-    &lt;iframe src="http://pokemonmillennium.psim.us/" id="pmarena" name='pmarena'&gt;&lt;/iframe&gt;
-
-
-    &lt;/div&gt;
-
-
-    &lt;/div&gt;
-&lt;/body&gt;
-</code></pre>
-
-
-
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-27141631-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-    var _rsCI="intelia-it";
-    var _rsCG="0";
-    var _rsDN="//secure-it.imrworldwide.com/";
-    var _rsCC=0;
-    var _rsIP=1;
-
-    <img src="//secure-it.imrworldwide.com/cgi-bin/m?ci=intelia-it&amp;cg=0" alt="">
-
-
 
 <p></p>
 </div>
+
+<div>
+<div>Initializing... Surprise, surprise, this requires JavaScript</div>
+</div>
+
+<div></div>
+
+<div>
+<em>Connecting...</em>
+</div>
+
+<div>
+<div>« Lobby</div>
+</div>
+
+<div></div>
+
+<div><div></div></div>
+
+<div></div>
+
+
+document.getElementById('loading-message').innerHTML += ' DONE&lt;br /&gt;Loading libraries...';
+
+soundManager.setup({url: 'swf/'});
+
+document.getElementById('loading-message').innerHTML += ' DONE&lt;br /&gt;Loading client...';
+document.getElementById('loading-message').innerHTML = 'If the client is taking a long time to load, try refreshing in a few minutes. If it still doesn\'t work, Pokemon Showdown may be down for maintenance. We apologize for the inconvenience.&lt;br /&gt;&lt;br /&gt;'+document.getElementById('loading-message').innerHTML;
+
+updateResize();
+if (init) init();
+<p>
+
+{
+  "version": "0.1",
+  "name": "Pokemon Showdown",
+  "description": "Play Pokemon battles online",
+  "launch_path": "/",
+  "icons": {
+    "16": "/favicon-16.png",
+    "32": "/favicon-32.png",
+    "48": "/favicon-48.png",
+    "128": "/favicon-128.png"
+  },
+  "developer": {
+    "name": "Guangcong Luo",
+    "url": "<a href="https://github.com/Zarel/Pokemon-Showdown">https://github.com/Zarel/Pokemon-Showdown</a>"
+  },
+  "installs_allowed_from": [
+    "<a href="https://appstore.mozillalabs.com">https://appstore.mozillalabs.com</a>",
+    "<a href="https://marketplace.mozilla.org">https://marketplace.mozilla.org</a>",
+    "<a href="https://marketplace.firefox.com">https://marketplace.firefox.com</a>",
+    "<a href="http://pokemonshowdown.com">http://pokemonshowdown.com</a>"
+  ],
+  "default_locale": "en"
+}</p>
       </section>
     </div>
 
